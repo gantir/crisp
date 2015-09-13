@@ -9,6 +9,7 @@ html, body {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	color:#444;
+	background-color: #FAEBD7;
 }
 html {
 	height: 100%;
@@ -84,7 +85,7 @@ img, iframe {
 a {
 	font-weight:700;
 	text-decoration:none;
-	color: #5cc265; /* Change Link Color */
+	color: #A53838; /* Change Link Color */
 }
 a:hover {
 	text-decoration:underline;
@@ -154,7 +155,7 @@ header #logo img {
 	margin-bottom: 1.5em;
 }
 #follow-icons a {
-	color: #ccc;
+	color: #5cc265;
 }	
 #follow-icons span {
 	vertical-align:top;
@@ -190,7 +191,7 @@ h3.post-title {
 	color: #ccc;
 }
 .taglist a {
-	background-color:#ccc;
+	background-color:#5cc265;
 	color:#fff;
 	display: inline-block;   
 	line-height: 1.5em;
