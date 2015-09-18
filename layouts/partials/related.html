@@ -2,11 +2,17 @@
   <section>
     <h5>For a little more reading ...</h5>
     <ul>
-      {{ range first 5 .RelatedPages }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }} - {{ .ReadingTime }} Minutes</a>
-      </li>
-      {{ end }}
+    {{ $page_link := .Permalink }}
+    {{ $categories := .Params.categories }}
+    {{ range .Site.Pages }}
+        {{ $page := . }}
+        {{ $has_common_categories := intersect $categories .Params.categories | len | lt 0 }}
+        {{ if and $has_common_categories (ne $page_link $page.Permalink) }}
+            <li>
+              <a href="{{ $page.Permalink }}">{{ $page.Title }}- {{ .ReadingTime }} Minutes</a>
+            </li>
+        {{ end }}
+    {{ end }}
     </ul>
   </section>
 </div>
