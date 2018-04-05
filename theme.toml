@@ -12,7 +12,7 @@ min_version = 0.14
 
 [author]
   name = "Thibault NORMAND"
-  homepage = "http://zenithar.org"
+  homepage = "https://zenithar.org"
 
 # If porting an existing theme
 [original]
